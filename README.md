@@ -2,6 +2,10 @@
 
 `mfa` is a tool to generate time-based one time password(totp).
 
+# Prerequisite
+
+1. install Erlang/OTP 21.
+
 # Configure
 
 1. create a config file containing your secret token, saved in `~/.mfa/config`
