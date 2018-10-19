@@ -16,7 +16,7 @@ run({Name,Key},Width) ->
 
 -spec totp(string()) -> {integer(),integer()}.
 totp(Key0) ->
-    T = calendar:datetime_to_gregorian_seconds(calendar:now_to_datetime(erlang:timestamp())) - ?epoch,
+    T = calendar:datetime_to_gregorian_seconds(calendar:universal_time()) - ?epoch,
     Key = decode32(string:uppercase(Key0)),
     {hotp(Key,T div 30), 30-(T rem 30)}.
 
