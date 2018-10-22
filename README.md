@@ -4,7 +4,7 @@
 
 # Prerequisite
 
-1. install Erlang/OTP 21.
+1. install Erlang/OTP 21. `brew install erlang`
 
 # Configure
 
